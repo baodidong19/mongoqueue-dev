@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": false,
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/baodidong19"
+    "registry": "https://npm.pkg.github.com"
   },
   "main": "dist/index.js",
   "files": [
