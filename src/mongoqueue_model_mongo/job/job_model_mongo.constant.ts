@@ -1,0 +1,1 @@
+export const COLLECTION_TTL = 60 * 5 // 5'
