@@ -1,12 +1,13 @@
 {
-  "name": "@baodidong19/mongoqueue",
+  "name": "mongoqueue",
   "version": "0.0.1",
   "description": "mongoqueue npm lib",
   "author": "BaoHuynh",
   "license": "MIT",
   "private": false,
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baodidong19/mongoqueue.git"
   },
   "main": "dist/index.js",
   "files": [

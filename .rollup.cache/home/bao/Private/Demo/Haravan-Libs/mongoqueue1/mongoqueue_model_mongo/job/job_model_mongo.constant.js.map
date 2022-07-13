@@ -1,0 +1,1 @@
+{"version":3,"file":"job_model_mongo.constant.js","sourceRoot":"","sources":["job_model_mongo.constant.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,IAAM,cAAc,GAAG,EAAE,GAAG,CAAC,CAAA,CAAC,KAAK","sourcesContent":["export const COLLECTION_TTL = 60 * 5 // 5'"]}
