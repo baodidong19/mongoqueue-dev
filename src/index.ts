@@ -1,5 +1,6 @@
 import {MongoQueueService} from './mongoqueue.service'
 import { MongooseConfiguration } from "./mongoqueue.interface";
+export * from './mongoqueue_model_mongo'
 
 export {MongoQueueService}
 export type {MongooseConfiguration}

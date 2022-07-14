@@ -26,7 +26,7 @@ var Mongo = /** @class */ (function () {
                 return console.log(logURL, 'MongooseDisconnected');
             });
             connection.on('close', function () {
-                return console.log(logURL, 'MongooseClose');
+                //console.log(logURL, 'MongooseClose')
             });
             connection.on('error', function (err) {
                 console.log(err);
@@ -41,6 +41,18 @@ var Mongo = /** @class */ (function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 return [2 /*return*/, model(Mongo.config.prefix + '-' + modelName, modelSchema)];
+            });
+        });
+    };
+    Mongo.prototype.disconectMongo = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, connection.close()];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
             });
         });
     };

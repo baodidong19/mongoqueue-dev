@@ -44,8 +44,9 @@ export class Mongo
       connection.on('disconnected', () =>
         console.log(logURL, 'MongooseDisconnected'))
 
-      connection.on('close', () =>
-        console.log(logURL, 'MongooseClose'))
+      connection.on('close', () =>{
+        //console.log(logURL, 'MongooseClose')
+      })
 
       connection.on('error', err =>{
         console.log(err)
@@ -61,5 +62,10 @@ export class Mongo
   public async createModel(modelName:string, modelSchema:Schema)
   {
     return model(Mongo.config.prefix + '-' + modelName, modelSchema) 
+  }
+
+  public async disconectMongo()
+  {
+    await connection.close()
   }
 }

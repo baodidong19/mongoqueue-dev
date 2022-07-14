@@ -1,7 +1,6 @@
 import {JobModel, QueueModel} from './mongoqueue_model_mongo'
 
 import {MongooseConfiguration} from './mongoqueue.interface'
-import { MongoQueue } from '.'
 
 export class MongoQueueService{
     

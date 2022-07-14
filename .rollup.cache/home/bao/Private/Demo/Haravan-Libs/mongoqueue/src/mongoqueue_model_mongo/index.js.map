@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["index.ts"],"names":[],"mappings":"AAAA,cAAc,OAAO,CAAA;AACrB,cAAc,SAAS,CAAA","sourcesContent":["export * from './job'\nexport * from './queue'"]}
+{"version":3,"file":"index.js","sourceRoot":"","sources":["index.ts"],"names":[],"mappings":"AAAA,cAAc,OAAO,CAAA;AACrB,cAAc,SAAS,CAAA;AACvB,cAAc,qCAAqC,CAAA","sourcesContent":["export * from './job'\nexport * from './queue'\nexport * from './mongoqueue_model_mongo.connection'"]}

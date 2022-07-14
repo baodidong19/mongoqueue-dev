@@ -1,4 +1,5 @@
 import { MongoQueueService } from './mongoqueue.service';
+export * from './mongoqueue_model_mongo';
 export { MongoQueueService };
 var MongoQueue = /** @class */ (function () {
     function MongoQueue(mongooseConfig) {

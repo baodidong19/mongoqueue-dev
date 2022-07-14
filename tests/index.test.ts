@@ -1,6 +1,5 @@
 import 'jest'
-import {MongoQueue} from '.'
-import {MongooseConfiguration} from './mongoqueue.interface'
+import {MongoQueue,MongooseConfiguration,Mongo} from '../src'
 
 const mongoConfig:MongooseConfiguration = {
   uris: 'mongodb://192.168.56.3:27017/partnership-test',
@@ -16,16 +15,17 @@ const mongoConfig:MongooseConfiguration = {
 }
 
 describe('test mongoqueues', () =>{
-
+  const mongoConnection = new Mongo(mongoConfig)
   const mongoqueue = new MongoQueue(mongoConfig)
   const MongoQueueService = mongoqueue.getMongoQueueService()
-  
+  afterAll(async() => await mongoConnection.disconectMongo());
   test('register queue', async () => {
     return await MongoQueueService.createQueue({
       code:'queue_sync_group_price_to_omni'
   }).then(data => {
       console.log(data)
       expect(data).toBeDefined()
+      
     })
   })
 })
