@@ -42,7 +42,7 @@ Ví dụ:
    Chạy npm link auths
    Cho kết quả /home/bao/Private/Demo/partnership/server/node_modules/auths -> /home/bao/.nvm/versions/node/v12.22.1/lib/node_modules/auths -> /home/bao/Private/Demo/partnership/server/modules/auths
    Sửa lại các import
-   import {Auth, HaravanTokenClaim} from '../../auths' -> import {Auth, HaravanTokenClaim} from 'auths'
+   import {Auth...} from '../../auths' -> import {Auth} from 'auths'
 4. Xóa liên kết
    Vào lại thư mục .../partnership/server/modules/auths
    Chạy lệnh npm unlink
